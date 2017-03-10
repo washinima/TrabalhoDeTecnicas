@@ -11,7 +11,24 @@ namespace Windoes_Size_Project
     {
         static private Vector2 sOrigin = Vector2.Zero; // Origin of the world
         static private float sWidth = 100f; // Width of the world
+        static private float sHeight = 56.25f; // Height of the world
         static private float sRatio = -1f; // Ratio between camera window and pixel
+        static public Vector2 CameraWindowLowerLeftPosition
+        { get { return sOrigin; } }
+        static public Vector2 CameraWindowUpperRightPosition
+        { get { return sOrigin + new Vector2(sWidth, sHeight); } }
+
+
+        // Support collision with the camera bounds
+        public enum CameraWindowCollisionStatus
+        {
+            CollideTop = 0,
+            CollideBottom = 1,
+            CollideLeft = 2,
+            CollideRight = 3,
+            InsideWindow = 4
+        };
+
 
         static private float cameraWindowToPixelRatio()
         {
@@ -55,5 +72,21 @@ namespace Windoes_Size_Project
 
             return new Rectangle(x, y, width, height);
         }
+
+        static public CameraWindowCollisionStatus CollidedWithCameraWindow(TexturedPrimitive prim)
+        {
+            Vector2 min = CameraWindowLowerLeftPosition;
+            Vector2 max = CameraWindowUpperRightPosition;
+            if (prim.MaxBound.Y > max.Y)
+                return CameraWindowCollisionStatus.CollideTop;
+            if (prim.MinBound.X < min.X)
+                return CameraWindowCollisionStatus.CollideLeft;
+            if (prim.MaxBound.X > max.X)
+                return CameraWindowCollisionStatus.CollideRight;
+            if (prim.MinBound.Y < min.Y)
+                return CameraWindowCollisionStatus.CollideBottom;
+            return CameraWindowCollisionStatus.InsideWindow;
+        }
+
     }
 }

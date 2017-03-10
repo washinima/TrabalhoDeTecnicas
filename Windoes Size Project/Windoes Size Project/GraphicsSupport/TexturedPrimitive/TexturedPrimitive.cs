@@ -15,8 +15,11 @@ namespace Windoes_Size_Project
     {
         // Support for drawing the image
         protected Texture2D mImage;     // The UWB-JPG.jpg image to be loaded
-        public Vector2 mPosition;    // Center position of image        ***public porque na classe Game1
+        public Vector2 mPosition;    // Center position of image        ***public porque na classe Game1 no método draw, não conseguia aceder a esta variável quando é protected***
         protected Vector2 mSize;        // Size of the image to be drawn
+        public Vector2 MinBound { get { return mPosition - (0.5f * mSize); } }
+        public Vector2 MaxBound { get { return mPosition + (0.5f * mSize); } }
+        /// Accessors to the camera window bounds
 
         /// <summary>
         /// Constructor of TexturePrimitive

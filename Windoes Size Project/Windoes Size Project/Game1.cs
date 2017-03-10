@@ -2,6 +2,7 @@
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using System;
 
 namespace Windoes_Size_Project
 {
@@ -21,6 +22,11 @@ namespace Windoes_Size_Project
         static public SpriteBatch sSpriteBatch;  // Drawing support
         static public ContentManager sContent;   // Loading textures
         static public GraphicsDeviceManager sGraphics; // Current display size
+        static public Random sRan; // For generating random numbers
+        TexturedPrimitive mUWBLogo;
+        SoccerBall mBall;
+        Vector2 mSoccerPosition = new Vector2(50, 50);
+        float mSoccerBallRadius = 3f;
         #endregion
 
         #region Preferred Window Size
@@ -46,6 +52,7 @@ namespace Windoes_Size_Project
             // set prefer window size
             Game1.sGraphics.PreferredBackBufferWidth = kWindowWidth;
             Game1.sGraphics.PreferredBackBufferHeight = kWindowHeight;
+            Game1.sRan = new Random();
         }
 
         /// <summary>
@@ -64,6 +71,10 @@ namespace Windoes_Size_Project
             mGraphicsObjects[2] = new TexturedPrimitive("UWB-PNG", new Vector2(50, 10), new Vector2(30, 30));
             mGraphicsObjects[3] = new TexturedPrimitive("UWB-PNG", new Vector2(50, 200), new Vector2(100, 100));
 
+            // Create the primitives
+            mUWBLogo = new TexturedPrimitive("UWB-PNG", new Vector2(30, 30), new Vector2(20, 20));
+            mBall = new SoccerBall(mSoccerPosition, mSoccerBallRadius * 2f);
+
             // NOTE: Since the creation of TextruedPrimitive involves loading of textures
             // The creation should occure in or after LoadContent()
         }
@@ -75,6 +86,15 @@ namespace Windoes_Size_Project
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
+
+            mUWBLogo.Update(InputWrapper.ThumbSticks.Left, Vector2.Zero);
+
+            mBall.Update();
+            mBall.Update(Vector2.Zero, InputWrapper.ThumbSticks.Right);
+
+            if (InputWrapper.Buttons.A == ButtonState.Pressed)
+                mBall = new SoccerBall(mSoccerPosition, mSoccerBallRadius * 2f);
+
             // Allows the game to exit
             if (InputWrapper.Buttons.Back == ButtonState.Pressed)
                 this.Exit();
@@ -112,6 +132,8 @@ namespace Windoes_Size_Project
                     InputWrapper.ThumbSticks.Right);
             #endregion
 
+
+
             base.Update(gameTime);
         }
 
@@ -135,6 +157,14 @@ namespace Windoes_Size_Project
             // Print out text message to echo status
             FontSupport.PrintStatus("Selected object is:" + mCurrentIndex + " Location=" + mGraphicsObjects[mCurrentIndex].mPosition, null);
             FontSupport.PrintStatusAt(mGraphicsObjects[mCurrentIndex].mPosition, "Selected", Color.Red);
+
+            mUWBLogo.Draw();
+            mBall.Draw();
+            // Print out text message to echo status
+            FontSupport.PrintStatus("Ball Position:" + mBall.mPosition, null);
+            FontSupport.PrintStatusAt(mUWBLogo.mPosition,
+            mUWBLogo.mPosition.ToString(), Color.White);
+            FontSupport.PrintStatusAt(mBall.mPosition, "Radius" + mBall.Radius, Color.Red);
 
             Game1.sSpriteBatch.End(); // inform graphics system we are done drawing
 

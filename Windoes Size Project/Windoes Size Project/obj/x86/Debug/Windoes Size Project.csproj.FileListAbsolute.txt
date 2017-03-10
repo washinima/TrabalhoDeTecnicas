@@ -19,3 +19,4 @@ C:\Users\bruno\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\
 C:\Users\bruno\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\OpenTK.dll
 C:\Users\bruno\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\obj\x86\Debug\Windoes Size Project.csprojResolveAssemblyReference.cache
 C:\Users\bruno\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Arial.xnb
+C:\Users\bruno\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Soccer.png
