@@ -1,0 +1,9 @@
+C:\Users\bruno\Desktop\EDJD\1º Ano\2º Semestre\Técnicas de Desenvolvimento de Jogos\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\OpenTK.dll.config
+C:\Users\bruno\Desktop\EDJD\1º Ano\2º Semestre\Técnicas de Desenvolvimento de Jogos\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Windoes Size Project.exe
+C:\Users\bruno\Desktop\EDJD\1º Ano\2º Semestre\Técnicas de Desenvolvimento de Jogos\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Windoes Size Project.pdb
+C:\Users\bruno\Desktop\EDJD\1º Ano\2º Semestre\Técnicas de Desenvolvimento de Jogos\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\MonoGame.Framework.dll
+C:\Users\bruno\Desktop\EDJD\1º Ano\2º Semestre\Técnicas de Desenvolvimento de Jogos\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\NVorbis.dll
+C:\Users\bruno\Desktop\EDJD\1º Ano\2º Semestre\Técnicas de Desenvolvimento de Jogos\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\OpenTK.dll
+C:\Users\bruno\Desktop\EDJD\1º Ano\2º Semestre\Técnicas de Desenvolvimento de Jogos\Windoes Size Project\Windoes Size Project\obj\x86\Debug\Windoes Size Project.csprojResolveAssemblyReference.cache
+C:\Users\bruno\Desktop\EDJD\1º Ano\2º Semestre\Técnicas de Desenvolvimento de Jogos\Windoes Size Project\Windoes Size Project\obj\x86\Debug\Windoes Size Project.exe
+C:\Users\bruno\Desktop\EDJD\1º Ano\2º Semestre\Técnicas de Desenvolvimento de Jogos\Windoes Size Project\Windoes Size Project\obj\x86\Debug\Windoes Size Project.pdb
