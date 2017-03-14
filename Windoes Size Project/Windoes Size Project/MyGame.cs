@@ -96,5 +96,20 @@ namespace Windoes_Size_Project
                new Vector2(75, 50), new Vector2(30, 20));
             #endregion Step e.
         }
+
+        public void DrawGame()
+        {
+            mHero.Draw();
+            foreach (Basketball b in mBBallList)
+                b.Draw();
+            if (null != mFinal)
+                mFinal.Draw();
+            // Drawn last to always show up on top
+            FontSupport.PrintStatus("Status: " +
+            "Score=" + mScore +
+            " Basketball: Generated( " + mTotalBBallCreated +
+            ") Collected(" + mBBallHit + ") Missed(" + mBBallMissed + ")",
+           null);
+        }
     }
 }

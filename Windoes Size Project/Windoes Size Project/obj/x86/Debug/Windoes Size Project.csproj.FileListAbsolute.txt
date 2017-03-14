@@ -22,3 +22,14 @@ C:\Users\bruno\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\
 C:\Users\bruno\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Soccer.png
 C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\obj\x86\Debug\Windoes Size Project.exe
 C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\obj\x86\Debug\Windoes Size Project.pdb
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Soccer.png
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\UWB-JPG.jpg
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\UWB-PNG.png
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Arial.xnb
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\OpenTK.dll.config
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Windoes Size Project.exe
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Windoes Size Project.pdb
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\MonoGame.Framework.dll
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\NVorbis.dll
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\OpenTK.dll
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\obj\x86\Debug\Windoes Size Project.csprojResolveAssemblyReference.cache

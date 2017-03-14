@@ -36,6 +36,8 @@ namespace Windoes_Size_Project
         const int kWindowHeight = 720;
         #endregion 
 
+        MyGame mTheGame;
+
         const int kNumObjects = 4;
         // Work with TexturedPrimitive Class
         TexturedPrimitive[] mGraphicsObjects; // An array of objects
@@ -75,6 +77,8 @@ namespace Windoes_Size_Project
             mUWBLogo = new TexturedPrimitive("UWB-PNG", new Vector2(30, 30), new Vector2(20, 20));
             mBall = new SoccerBall(mSoccerPosition, mSoccerBallRadius * 2f);
 
+            mTheGame = new MyGame();
+
             // NOTE: Since the creation of TextruedPrimitive involves loading of textures
             // The creation should occure in or after LoadContent()
         }
@@ -98,6 +102,10 @@ namespace Windoes_Size_Project
             // Allows the game to exit
             if (InputWrapper.Buttons.Back == ButtonState.Pressed)
                 this.Exit();
+
+            mTheGame.UpdateGame(gameTime);
+            if (InputWrapper.Buttons.A == ButtonState.Pressed)
+                mTheGame = new MyGame();
 
             #region Toggle full screen and window size
             // "A" to toggle full screen
@@ -168,6 +176,7 @@ namespace Windoes_Size_Project
 
             Game1.sSpriteBatch.End(); // inform graphics system we are done drawing
 
+            mTheGame.DrawGame();
             base.Draw(gameTime);
         }
     }
