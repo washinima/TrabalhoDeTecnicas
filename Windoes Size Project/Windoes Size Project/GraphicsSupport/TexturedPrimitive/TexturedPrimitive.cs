@@ -58,5 +58,12 @@ namespace Windoes_Size_Project
             destRect = Camera.ComputePixelRectangle(mPosition, mSize);
             Game1.sSpriteBatch.Draw(mImage, destRect, Color.White);
         }
+
+        public bool PrimitivesTouches(TexturedPrimitive otherPrim)
+        {
+            Vector2 v = mPosition - otherPrim.mPosition;
+            float dist = v.Length();
+            return (dist < ((mSize.X / 2f) + (otherPrim.mSize.X / 2f)));
+        }
     }
 }
