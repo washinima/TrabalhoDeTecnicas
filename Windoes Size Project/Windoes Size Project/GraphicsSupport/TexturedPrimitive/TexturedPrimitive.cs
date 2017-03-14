@@ -34,6 +34,11 @@ namespace Windoes_Size_Project
             mSize = size;
         }
 
+        public TexturedPrimitive(String imageName)
+        {
+            mImage = Game1.sContent.Load<Texture2D>(imageName);
+        }
+
         /// <summary>
         /// Allows the primitive object to update its state
         /// </summary>

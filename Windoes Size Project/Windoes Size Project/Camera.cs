@@ -89,7 +89,7 @@ namespace Windoes_Size_Project
         }
 
 
-        public Vector2 RandomPosition(bool offCamera)
+        static public Vector2 RandomPosition(bool offCamera)
         {
             Vector2 position;
             float posX = (float)Game1.sRan.NextDouble() * Camera.sWidth * 0.80f

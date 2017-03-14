@@ -14,7 +14,6 @@ namespace Windoes_Size_Project
             // Change current position by this amount
             private const float kIncreaseRate = 1.001f;
             private Vector2 kInitSize = new Vector2(5, 5);
-
             private const float kFinalSize = 15f;
 
             public Basketball() : base("Basketball")
