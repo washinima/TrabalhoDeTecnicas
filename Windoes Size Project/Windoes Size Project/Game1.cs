@@ -174,9 +174,10 @@ namespace Windoes_Size_Project
             mUWBLogo.mPosition.ToString(), Color.White);
             FontSupport.PrintStatusAt(mBall.mPosition, "Radius" + mBall.Radius, Color.Red);
 
+            mTheGame.DrawGame();
             Game1.sSpriteBatch.End(); // inform graphics system we are done drawing
 
-            mTheGame.DrawGame();
+            
             base.Draw(gameTime);
         }
     }

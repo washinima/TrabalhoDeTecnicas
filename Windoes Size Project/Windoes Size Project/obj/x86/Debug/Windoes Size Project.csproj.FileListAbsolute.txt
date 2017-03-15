@@ -33,3 +33,7 @@ C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Siz
 C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\NVorbis.dll
 C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\OpenTK.dll
 C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\obj\x86\Debug\Windoes Size Project.csprojResolveAssemblyReference.cache
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\BasketBall.png
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Looser.jpg
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Me.png
+C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Winner.xnb
