@@ -90,10 +90,10 @@ namespace Windoes_Size_Project
             #region Step e.
             // Check for winning condition ...
             if (mScore > kWinScore)
-                mFinal = new TexturedPrimitive("Winner", new Vector2(75, 50), new Vector2(30, 20));
+                mFinal = new TexturedPrimitive("Winner", new Vector2(50, 25), new Vector2(30, 20));
             else if (mScore < kLossScore)
                 mFinal = new TexturedPrimitive("Looser",
-               new Vector2(75, 50), new Vector2(30, 20));
+               new Vector2(50, 25), new Vector2(30, 20));
             #endregion Step e.
         }
 

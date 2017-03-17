@@ -34,11 +34,6 @@ namespace Windoes_Size_Project
             mSize = size;
         }
 
-        public TexturedPrimitive(String imageName)
-        {
-            mImage = Game1.sContent.Load<Texture2D>(imageName);
-        }
-
         /// <summary>
         /// Allows the primitive object to update its state
         /// </summary>
@@ -58,9 +53,9 @@ namespace Windoes_Size_Project
         public void Draw()
         {
             // Defines location and size of the texture
-            Rectangle destRect = new Rectangle((int)mPosition.X, (int)mPosition.Y, (int)mSize.X, (int)mSize.Y);
+            //Rectangle destRect = new Rectangle((int)mPosition.X, (int)mPosition.Y, (int)mSize.X, (int)mSize.Y);
             // Defines where and size of the texture to show
-            destRect = Camera.ComputePixelRectangle(mPosition, mSize);
+            Rectangle destRect = Camera.ComputePixelRectangle(mPosition, mSize);
             Game1.sSpriteBatch.Draw(mImage, destRect, Color.White);
         }
 

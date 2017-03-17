@@ -23,10 +23,6 @@ namespace Windoes_Size_Project
         static public ContentManager sContent;   // Loading textures
         static public GraphicsDeviceManager sGraphics; // Current display size
         static public Random sRan; // For generating random numbers
-        TexturedPrimitive mUWBLogo;
-        SoccerBall mBall;
-        Vector2 mSoccerPosition = new Vector2(50, 50);
-        float mSoccerBallRadius = 3f;
         #endregion
 
         #region Preferred Window Size
@@ -39,9 +35,6 @@ namespace Windoes_Size_Project
         MyGame mTheGame;
 
         const int kNumObjects = 4;
-        // Work with TexturedPrimitive Class
-        TexturedPrimitive[] mGraphicsObjects; // An array of objects
-        int mCurrentIndex = 0;
 
         public Game1()
         {
@@ -67,16 +60,6 @@ namespace Windoes_Size_Project
             Game1.sSpriteBatch = new SpriteBatch(GraphicsDevice);
 
             // Create the primitives
-            mGraphicsObjects = new TexturedPrimitive[kNumObjects];
-            mGraphicsObjects[0] = new TexturedPrimitive("UWB-JPG", new Vector2(10, 10), new Vector2(30, 30));
-            mGraphicsObjects[1] = new TexturedPrimitive("UWB-JPG", new Vector2(200, 200), new Vector2(100, 100));
-            mGraphicsObjects[2] = new TexturedPrimitive("UWB-PNG", new Vector2(50, 10), new Vector2(30, 30));
-            mGraphicsObjects[3] = new TexturedPrimitive("UWB-PNG", new Vector2(50, 200), new Vector2(100, 100));
-
-            // Create the primitives
-            mUWBLogo = new TexturedPrimitive("UWB-PNG", new Vector2(30, 30), new Vector2(20, 20));
-            mBall = new SoccerBall(mSoccerPosition, mSoccerBallRadius * 2f);
-
             mTheGame = new MyGame();
 
             // NOTE: Since the creation of TextruedPrimitive involves loading of textures
@@ -90,14 +73,6 @@ namespace Windoes_Size_Project
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Update(GameTime gameTime)
         {
-
-            mUWBLogo.Update(InputWrapper.ThumbSticks.Left, Vector2.Zero);
-
-            mBall.Update();
-            mBall.Update(Vector2.Zero, InputWrapper.ThumbSticks.Right);
-
-            if (InputWrapper.Buttons.A == ButtonState.Pressed)
-                mBall = new SoccerBall(mSoccerPosition, mSoccerBallRadius * 2f);
 
             // Allows the game to exit
             if (InputWrapper.Buttons.Back == ButtonState.Pressed)
@@ -129,17 +104,6 @@ namespace Windoes_Size_Project
             }
             #endregion
 
-            #region Select object and control selected object
-            // Button-x to select the next object to work with
-            if (InputWrapper.Buttons.X == ButtonState.Pressed)
-                mCurrentIndex = (mCurrentIndex + 1) % kNumObjects;
-
-            // Update currently working object with thumb sticks.
-            mGraphicsObjects[mCurrentIndex].Update(
-                    InputWrapper.ThumbSticks.Left,
-                    InputWrapper.ThumbSticks.Right);
-            #endregion
-
 
 
             base.Update(gameTime);
@@ -157,22 +121,8 @@ namespace Windoes_Size_Project
             Game1.sSpriteBatch.Begin(); // Initialize drawing support
 
             // Loop over and draw each primitive
-            foreach (TexturedPrimitive p in mGraphicsObjects)
-            {
-                p.Draw();
-            }
 
             // Print out text message to echo status
-            FontSupport.PrintStatus("Selected object is:" + mCurrentIndex + " Location=" + mGraphicsObjects[mCurrentIndex].mPosition, null);
-            FontSupport.PrintStatusAt(mGraphicsObjects[mCurrentIndex].mPosition, "Selected", Color.Red);
-
-            mUWBLogo.Draw();
-            mBall.Draw();
-            // Print out text message to echo status
-            FontSupport.PrintStatus("Ball Position:" + mBall.mPosition, null);
-            FontSupport.PrintStatusAt(mUWBLogo.mPosition,
-            mUWBLogo.mPosition.ToString(), Color.White);
-            FontSupport.PrintStatusAt(mBall.mPosition, "Radius" + mBall.Radius, Color.Red);
 
             mTheGame.DrawGame();
             Game1.sSpriteBatch.End(); // inform graphics system we are done drawing
