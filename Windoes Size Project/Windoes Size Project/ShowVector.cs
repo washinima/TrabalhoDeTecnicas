@@ -41,6 +41,7 @@ namespace Windoes_Size_Project
             }
             #endregion
 
+            LoadImage();
             #region Step 4c. Draw Arrow
             // Define location and size of the texture
             Vector2 size = new Vector2(length, kLenToWidthRatio * length);
