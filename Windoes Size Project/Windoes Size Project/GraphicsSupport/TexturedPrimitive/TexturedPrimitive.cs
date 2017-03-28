@@ -13,53 +13,77 @@ namespace Windoes_Size_Project
     /// </summary>
     public class TexturedPrimitive
     {
+        protected float mRotateAngle; // In radians, clockwise rotation
         // Support for drawing the image
         protected Texture2D mImage;     // The UWB-JPG.jpg image to be loaded
         public Vector2 mPosition;    // Center position of image        ***public porque na classe Game1 no método draw, não conseguia aceder a esta variável quando é protected***
         protected Vector2 mSize;        // Size of the image to be drawn
-        public Vector2 MinBound { get { return mPosition - (0.5f * mSize); } }
-        public Vector2 MaxBound { get { return mPosition + (0.5f * mSize); } }
-        /// Accessors to the camera window bounds
+        public Vector2 MinBound { get { return mPosition - (0.5f * mSize); } } /// Accessors to the camera window bounds
+        public Vector2 MaxBound { get { return mPosition + (0.5f * mSize); } } /// Accessors to the camera window bounds
+        protected String mLabelString;  // String to draw
+        protected Color mLabelColor = Color.Black;
+        public float RotateAngleInRadian { get { return mRotateAngle; } set { mRotateAngle = value; } }
+        public float Speed { get; internal set; }
 
-        /// <summary>
-        /// Constructor of TexturePrimitive
-        /// </summary>
-        /// <param name="imageName">name of the image to be loaded as texture.</param>
-        /// <param name="position">top left pixel position of the texture to be drawn</param>
-        /// <param name="size">width/height of the texture to be drawn</param>
+        protected void InitPrimitive(String imageName, Vector2 position, Vector2 size, String label = null)
+        {
+            mImage = Game1.sContent.Load<Texture2D>(imageName);
+            mPosition = position;
+            mSize = size;
+            mRotateAngle = 0f;
+            mLabelString = label;
+        }
+
+    public TexturedPrimitive(String imageName, Vector2 position, Vector2 size, String label = null)
+        {
+            InitPrimitive(imageName, position, size, label);
+        }
         public TexturedPrimitive(String imageName, Vector2 position, Vector2 size)
         {
             mImage = Game1.sContent.Load<Texture2D>(imageName);
             mPosition = position;
             mSize = size;
+            mRotateAngle = 0f;
         }
 
-        /// <summary>
-        /// Allows the primitive object to update its state
-        /// </summary>
-        /// <param name="deltaTranslate">Amount to change the position of the primitive. 
-        ///                              Value of 0 says position is not changed.</param>
-        /// <param name="deltaScale">Amount to change of the scale the primitive. 
-        ///                          Value of 0 says size is not changed.</param>
+        public TexturedPrimitive(String imageName)  
+        {
+            mImage = Game1.sContent.Load<Texture2D>(imageName);
+            mRotateAngle = 0f;
+        }
+
         public void Update(Vector2 deltaTranslate, Vector2 deltaScale)
         {
             mPosition += deltaTranslate;
             mSize += deltaScale;
         }
 
-        /// <summary>
-        /// Draw the primitive
-        /// </summary>
-        public void Draw()
+        public void Update(Vector2 deltaTranslate, Vector2 deltaScale, float deltaAngleInRadian)
         {
-            // Defines location and size of the texture
-            //Rectangle destRect = new Rectangle((int)mPosition.X, (int)mPosition.Y, (int)mSize.X, (int)mSize.Y);
-            // Defines where and size of the texture to show
-            Rectangle destRect = Camera.ComputePixelRectangle(mPosition, mSize);
-            Game1.sSpriteBatch.Draw(mImage, destRect, Color.White);
+            mPosition += deltaTranslate;
+            mSize += deltaScale;
+            mRotateAngle += deltaAngleInRadian;
         }
 
-        public bool PrimitivesTouches(TexturedPrimitive otherPrim)
+        public virtual void Draw()
+        {
+            // Define location and size of the texture    
+            Rectangle destRect = Camera.ComputePixelRectangle(mPosition, mSize);
+            // Define the rotation origin    
+            Vector2 org = new Vector2(mImage.Width / 2, mImage.Height / 2);
+
+            // Draw the texture    
+            Game1.sSpriteBatch.Draw(
+                mImage, 
+                destRect,           // Area to be drawn in pixel space            
+                null, 
+                Color.White,            
+                mRotateAngle,       // Angle to rotate (clockwise)            
+                org,                // Image reference position            
+                SpriteEffects.None, 0f); 
+        }
+
+        public bool PrimitivesTouches(TexturedPrimitive otherPrim)      /// nao é preciso
         {
             Vector2 v = mPosition - otherPrim.mPosition;
             float dist = v.Length();

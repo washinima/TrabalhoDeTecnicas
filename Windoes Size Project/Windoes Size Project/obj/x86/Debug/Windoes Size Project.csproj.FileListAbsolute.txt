@@ -34,3 +34,33 @@ C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Siz
 C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Looser.jpg
 C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Me.png
 C:\Users\Carlos\Desktop\Ipca\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Winner.xnb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\obj\x86\Debug\Windoes Size Project.exe
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\obj\x86\Debug\Windoes Size Project.pdb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\BasketBall.png
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Looser.jpg
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Me.png
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Arial.xnb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Winner.xnb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\OpenTK.dll.config
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Windoes Size Project.exe
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Windoes Size Project.pdb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\MonoGame.Framework.dll
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\NVorbis.dll
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\OpenTK.dll
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\obj\x86\Debug\Windoes Size Project.csprojResolveAssemblyReference.cache
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Arrow.xnb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Arrow.png
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Chaser.png
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Insect.png
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Net.png
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Position.png
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Rocket.png
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Chaser.xnb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Insect.xnb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Net.xnb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Position.xnb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Rocket.xnb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Soccer.png
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\UWB-JPG.jpg
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\Soccer.xnb
+C:\Users\Marcio Rocha\TrabalhoDeTecnicas\Windoes Size Project\Windoes Size Project\bin\DesktopGL\x86\Debug\Content\UWB-JPG.xnb

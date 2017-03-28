@@ -32,7 +32,7 @@ namespace Windoes_Size_Project
         const int kWindowHeight = 720;
         #endregion 
 
-        MyGame mTheGame;
+        GameState mTheGame;
 
         const int kNumObjects = 4;
 
@@ -60,7 +60,7 @@ namespace Windoes_Size_Project
             Game1.sSpriteBatch = new SpriteBatch(GraphicsDevice);
 
             // Create the primitives
-            mTheGame = new MyGame();
+            mTheGame = new GameState();
 
             // NOTE: Since the creation of TextruedPrimitive involves loading of textures
             // The creation should occure in or after LoadContent()
@@ -78,9 +78,9 @@ namespace Windoes_Size_Project
             if (InputWrapper.Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            mTheGame.UpdateGame(gameTime);
+            mTheGame.UpdateGame();
             if (InputWrapper.Buttons.A == ButtonState.Pressed)
-                mTheGame = new MyGame();
+                mTheGame = new GameState();
 
             #region Toggle full screen and window size
             // "A" to toggle full screen
